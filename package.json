@@ -1,0 +1,11 @@
+{
+  "name": "orphanage_search_nlw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MuriloRoque/orphanage_search_nlw.git",
+  "author": "Murilo Roque <muriloengqui@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
