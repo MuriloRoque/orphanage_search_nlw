@@ -28,7 +28,7 @@ export default {
 
   async create(request: Request, response: Response) {
     const {
-      name,
+      nome,
       latitude,
       longitude,
       about,
