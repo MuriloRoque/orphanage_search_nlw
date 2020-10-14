@@ -6,7 +6,7 @@ import '../styles/pages/orphanage.css';
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
 
-export default function Orphanage() {
+const Orphanage = () => {
   return (
     <div id="page-orphanage">
       <Sidebar />
@@ -89,3 +89,5 @@ export default function Orphanage() {
     </div>
   );
 }
+
+export default Orphanage;

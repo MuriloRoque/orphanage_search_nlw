@@ -5,7 +5,7 @@ import '../styles/pages/create-orphanage.css';
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
 
-export default function CreateOrphanage() {
+const CreateOrphanage = () => {
   return (
     <div id="page-create-orphanage">
       <Sidebar />
@@ -80,3 +80,5 @@ export default function CreateOrphanage() {
     </div>
   );
 }
+
+export default CreateOrphanage;
