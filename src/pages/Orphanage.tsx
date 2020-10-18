@@ -66,7 +66,7 @@ const Orphanage = () => {
 
             <div className="map-container">
               <Map 
-                center={[orphanage.latitude, orphanage.longitude]} 
+                center={[Number(orphanage.latitude), Number(orphanage.longitude)]} 
                 zoom={16} 
                 style={{ width: '100%', height: 280 }}
                 dragging={false}

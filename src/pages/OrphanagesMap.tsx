@@ -46,7 +46,7 @@ const OrphanagesMap = () => {
           return (
             <Marker
               key={orphanage.id}
-              position={[orphanage.latitude, orphanage.longitude]}
+              position={[Number(orphanage.latitude), Number(orphanage.longitude)]}
               icon={mapIcon}
             >
               <Popup closeButton={false} minWidth={240} maxWidth={240} className='map-popup'>
