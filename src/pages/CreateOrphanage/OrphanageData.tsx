@@ -46,7 +46,7 @@ export default function OrphanageData() {
   const handleSelectImages = async () => {
     const { status } = await ImagePicker.requestCameraRollPermissionsAsync()
     if (status !== 'granted') {
-      alert('Eita, precisamos de acessoàs suas fotos...')
+      alert('We need you to authorize us to use your pictures')
       return;
     }
     const result = await ImagePicker.launchImageLibraryAsync({
@@ -62,16 +62,16 @@ export default function OrphanageData() {
   }
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 24 }}>
-      <Text style={styles.title}>Dados</Text>
+      <Text style={styles.title}>Details</Text>
 
-      <Text style={styles.label}>Nome</Text>
+      <Text style={styles.label}>Name</Text>
       <TextInput
         style={styles.input}
         value={name}
         onChangeText={setName}
       />
 
-      <Text style={styles.label}>Sobre</Text>
+      <Text style={styles.label}>About</Text>
       <TextInput
         style={[styles.input, { height: 110 }]}
         multiline
@@ -79,12 +79,7 @@ export default function OrphanageData() {
         onChangeText={setAbout}
       />
 
-      {/* <Text style={styles.label}>Whatsapp</Text>
-      <TextInput
-        style={styles.input}
-      /> */}
-
-      <Text style={styles.label}>Fotos</Text>
+      <Text style={styles.label}>Pictures</Text>
       <View style={styles.uploadedImagesContainer}>
         {images.map(image => {
           return (
@@ -100,9 +95,9 @@ export default function OrphanageData() {
         <Feather name="plus" size={24} color="#15B6D6" />
       </TouchableOpacity>
 
-      <Text style={styles.title}>Visitação</Text>
+      <Text style={styles.title}>Visit</Text>
 
-      <Text style={styles.label}>Instruções</Text>
+      <Text style={styles.label}>Instructions</Text>
       <TextInput
         style={[styles.input, { height: 110 }]}
         multiline
@@ -110,7 +105,7 @@ export default function OrphanageData() {
         onChangeText={setInstructions}
       />
 
-      <Text style={styles.label}>Horario de visitas</Text>
+      <Text style={styles.label}>Visit time</Text>
       <TextInput
         style={styles.input}
         value={opening_hours}
@@ -118,7 +113,7 @@ export default function OrphanageData() {
       />
 
       <View style={styles.switchContainer}>
-        <Text style={styles.label}>Atende final de semana?</Text>
+        <Text style={styles.label}>Open on weekends?</Text>
         <Switch 
           thumbColor="#fff" 
           trackColor={{ false: '#ccc', true: '#39CC83' }}
@@ -128,7 +123,7 @@ export default function OrphanageData() {
       </View>
 
       <RectButton style={styles.nextButton} onPress={handleCreateOrphanage}>
-        <Text style={styles.nextButtonText}>Cadastrar</Text>
+        <Text style={styles.nextButtonText}>Register</Text>
       </RectButton>
     </ScrollView>
   )
