@@ -57,6 +57,16 @@ Contributions, issues and feature requests are welcome! Start by:
 - Push your branch up to your forked repository
 - Open a Pull Request with a detailed description to the development branch of the original project for a review
 
+## Future features
+
+- Add authentication (Login and Signup) pages;
+- Password recovery;
+- Add orphanage registration approval;
+- Deploy mobile app as APK and IPA;
+- User onboarding (tutorial on how to use the app);
+- User real location;
+- Multiple steps registration (multiple screens).
+
 ## Acknowledgements
 
 - This app was built during NLW#3, an event in Brazil that happened in October hosted by [RocketSeat](https://rocketseat.com.br/).
